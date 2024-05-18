@@ -12,7 +12,7 @@ def init_vectordb():
     # Connect to Milvus Database
     connections.connect(host=HOST, port=PORT, secure=False)
     
-    print('Opening collection and index for "%s"' % collection_name)
+    print('Opening collection and index for "%s"' % 'MILVUS_COLLECTION_NAME')
     collection = Collection('MILVUS_COLLECTION_NAME')      # Get an existing collection.
     collection.load()
     return collection
