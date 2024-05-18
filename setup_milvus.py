@@ -1,5 +1,5 @@
 import os
-from pymilvus import connections, Collection, utility
+from pymilvus import connections, Collection
 from dotenv import load_dotenv
 load_dotenv()
 
