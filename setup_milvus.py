@@ -4,6 +4,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 def init_vectordb():
+    if os.path.exists('setup.cfg'):
+        print('Found config file')
+
     HOST = os.getenv('MILVUS_HOST')
     PORT = os.getenv('MILVUS_PORT')
     # Connect to Milvus Database
