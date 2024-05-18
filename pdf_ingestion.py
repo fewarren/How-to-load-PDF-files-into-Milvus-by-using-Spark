@@ -6,11 +6,8 @@ from pyspark.sql.types import StringType, ArrayType, FloatType
 from sentence_transformers import SentenceTransformer
 import findspark
 from PyPDF2 import PdfReader
-from pyspark.sql import SparkSession
 
 from pymilvus import connections, Collection
-
-import findspark
 import re
 
 from dotenv import load_dotenv
