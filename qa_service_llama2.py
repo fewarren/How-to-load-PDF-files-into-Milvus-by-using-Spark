@@ -10,8 +10,6 @@ os.environ["REPLICATE_API_TOKEN"] = os.getenv('REPLICATE_API_TOKEN')
 SYSTEM_TEMPLATE = os.getenv('SYSTEM_TEMPLATE')
 collection_name = os.getenv('MILVUS_COLLECTION_NAME')
 
-#'''
-# Search the database based on input text
 def embed_search(data):
     # Create a SentenceTransformer model
     transformer = SentenceTransformer(os.getenv('EMBEDDING_MODEL'))

@@ -11,8 +11,6 @@ openai.api_key = os.environ["OPENAI_API_KEY"]
 SYSTEM_TEMPLATE = os.getenv('SYSTEM_TEMPLATE')
 collection_name = os.getenv('MILVUS_COLLECTION_NAME')
 
-#'''
-# Search the database based on input text
 def embed_search(data):
     # Create a SentenceTransformer model
     transformer = SentenceTransformer(os.getenv('EMBEDDING_MODEL'))
