@@ -16,7 +16,7 @@ def embed_search(data):
     # Create a SentenceTransformer model
     transformer = SentenceTransformer(os.getenv('EMBEDDING_MODEL'))
     embeds = transformer.encode(data)
-    return [x for x in embeds]
+    return list(embeds)
 
 def data_querying(input_text):
     print('Searching in vector DB ...')
